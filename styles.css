@@ -30,7 +30,7 @@ h1.header {
 }
 
 div.plaid {
-    background-image: url(/assets/images/plaid.jpg);
+    background-image: url(assets/images/plaid.jpg);
     background-repeat: no-repeat;
     background-size: 30%;
     background-position-x: 85%;
@@ -39,7 +39,7 @@ div.plaid {
 }
 
 div.header {
-    background-image: url(/assets/images/main-page-header.png);
+    background-image: url(assets/images/main-page-header.png);
     background-repeat: no-repeat;
     background-position-x: 85%;
     background-position-y: 50%;
@@ -154,12 +154,16 @@ div.body-recipe {
     margin-right: auto;
 }
   
-figcaption {
+p.figcaption {
     color: rgb(110, 110, 110);
     font-style: italic;
     font-size: 80%;
     
   }
+
+img.recipe {
+    width: 100%;
+}
 
 
 img.step-image {
@@ -196,7 +200,7 @@ img.footer-logo {
     background: linear-gradient(-45deg, #ff814f 0%, #92ff92 100% );
     transform: translate3d(0px, -20px, 0) scale(1);
     filter: blur(20px);
-    opacity: var(0.7);
+    opacity: 0.7;
     transition: opacity 0.3s;
 }
 
@@ -217,8 +221,8 @@ img.footer-logo {
 
 @font-face {
     font-family: 'Libre Baskerville';
-    src: url('/assets/fonts/LibreBaskerville-Bold.woff') format('woff2'),
-        url('/assets/fonts/LibreBaskerville-Bold.woff2') format('woff');
+    src: url('assets/fonts/LibreBaskerville-Bold.woff') format('woff2'),
+        url('assets/fonts/LibreBaskerville-Bold.woff2') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -226,8 +230,8 @@ img.footer-logo {
 
 @font-face {
     font-family: 'Libre Baskerville';
-    src: url('/assets/fonts/LibreBaskerville-Regular.woff') format('woff2'),
-        url('/assets/fonts/LibreBaskerville-Regular.woff2') format('woff');
+    src: url('assets/fonts/LibreBaskerville-Regular.woff') format('woff2'),
+        url('assets/fonts/LibreBaskerville-Regular.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -235,8 +239,8 @@ img.footer-logo {
 
 @font-face {
     font-family: 'Roboto';
-    src: url('/assets/fonts/Roboto-Regular.woff') format('woff2'),
-        url('/assets/fonts/Roboto-Regular.woff2') format('woff');
+    src: url('assets/fonts/Roboto-Regular.woff') format('woff2'),
+        url('assets/fonts/Roboto-Regular.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -244,8 +248,8 @@ img.footer-logo {
 
 @font-face {
     font-family: 'Roboto';
-    src: url('/assets/fonts/Roboto-Thin.woff') format('woff2'),
-        url('/assets/fonts/Roboto-Thin.woff2') format('woff');
+    src: url('assets/fonts/Roboto-Thin.woff') format('woff2'),
+        url('assets/fonts/Roboto-Thin.woff2') format('woff');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
