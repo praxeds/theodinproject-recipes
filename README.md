@@ -2,7 +2,7 @@
 
 ![Brazilian Spice Banner](/assets/images/header.png)
 
-* Check out the website here!
+* [Check out the website here!](https://praxeds.github.io/odin-recipes/)
 * [The Odin Project Assignment](https://www.theodinproject.com/lessons/foundations-recipes)
 
  ## About
@@ -10,5 +10,6 @@
 
  ## Credits
 <sub>Recipes by [*Simply Recipes*](https://www.simplyrecipes.com/)</sub><br>
+<sub>Food writing by [*NYT Cooking*](https://cooking.nytimes.com/)</sub><br>
 <sub>Photography by voltan1/Getty Images</sub>
 

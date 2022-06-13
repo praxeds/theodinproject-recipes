@@ -1,0 +1,254 @@
+
+
+html, body {
+    margin: 0px;
+
+}
+
+body {
+    font-family: Roboto;
+}
+
+/* H1 header */
+
+[id="h1_1"] {
+    font-family: Libre Baskerville;
+    font-weight: bold;
+    color: rgb(0, 153, 33);
+}
+
+[id="h1_2"] {
+    font-family: Roboto;
+    font-weight: 100;
+}
+
+h1.header {
+    font-size: 100px;
+    text-align: left;
+    padding-top: 80px;
+    padding-left: 110px;
+}
+
+div.plaid {
+    background-image: url(/assets/images/plaid.jpg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position-x: 85%;
+    background-position-y: 50%;
+
+}
+
+div.header {
+    background-image: url(/assets/images/main-page-header.png);
+    background-repeat: no-repeat;
+    background-position-x: 85%;
+    background-position-y: 50%;
+    min-height: 600px;   
+}
+
+
+/* H1 header */
+
+/* NAV MENU */
+.nav {
+    list-style-type: none;
+    margin: 0px;
+    padding: 20px;
+    background-color: rgb(255, 156, 74);
+    
+  }
+
+ul.nav > li {
+    display: inline;
+    text-transform: uppercase;
+  }
+
+ul.nav > li > a {
+    display: inline;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+
+ul.nav > li > a:hover {
+    color: rgb(0, 153, 33);
+    background-color: white;
+  }
+
+/* NAV MENU */
+
+/* Recipes Gallery in Main Page */
+
+div.container {
+    display:inline-block;
+    margin-left: 88px;
+    
+  }
+
+p.recipe-name {
+    font-family: Roboto;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+p.recipe-name > a {
+    text-decoration: none;
+    color: black;
+}
+
+p.recipe-name > a:hover {
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+p.recipe-name {
+    text-align:center;
+  }
+
+h1, h2, h3, h4 {
+    font-family: LibreBaskerville;
+
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 70px;
+    margin: 2%;
+}
+
+h2 {
+    font-size: 38px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+h4 {
+    font-size: 21px;
+}
+
+.description, .ingredients, .steps {
+    font-size: 18px;
+}
+
+
+/*****Recipes Page*****/
+
+div.recipe-header {
+    text-align: left;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+div.body-recipe {
+    max-width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+figcaption {
+    color: rgb(110, 110, 110);
+    font-style: italic;
+    font-size: 80%;
+    
+  }
+
+
+img.step-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+
+img.footer-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    
+}
+
+.footer {
+    position: relative;
+    background: rgb(235, 235, 235);
+    margin-top: 8%;
+    padding: 30px;
+  }
+
+.footer:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-45deg, #ff814f 0%, #92ff92 100% );
+    transform: translate3d(0px, -20px, 0) scale(1);
+    filter: blur(20px);
+    opacity: var(0.7);
+    transition: opacity 0.3s;
+}
+
+.footer::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+}
+
+
+
+/* FONTS */
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('/assets/fonts/LibreBaskerville-Bold.woff') format('woff2'),
+        url('/assets/fonts/LibreBaskerville-Bold.woff2') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('/assets/fonts/LibreBaskerville-Regular.woff') format('woff2'),
+        url('/assets/fonts/LibreBaskerville-Regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/fonts/Roboto-Regular.woff') format('woff2'),
+        url('/assets/fonts/Roboto-Regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/fonts/Roboto-Thin.woff') format('woff2'),
+        url('/assets/fonts/Roboto-Thin.woff2') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* FONTS */
