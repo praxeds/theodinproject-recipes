@@ -2,7 +2,7 @@
 
 ![Brazilian Spice Banner](/assets/images/header.png)
 
-* [Check out the website here!](https://praxeds.github.io/odin-recipes/)
+* [Check out the website here!](https://praxeds.github.io/odin-recipes/index.html)
 * [The Odin Project Assignment](https://www.theodinproject.com/lessons/foundations-recipes)
 
  ## About
