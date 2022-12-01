@@ -43,11 +43,23 @@ nav .navbar-toggler {
   font-size: 4rem;
 }
 
+#recipesDiv div.row > div > div.container {
+  height: 100%;
+  border-radius: 1rem;
+  border: 2px solid #D4D4D4;
+}
 #recipesDiv img.recipeImg {
   width: 100%;
-  height: 65%;
+  height: 50% !important;
+  border-radius: 1rem 1rem 0 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+#recipesDiv div.d-flex img.authorImg {
+  border-radius: 50%;
+}
+#recipesDiv div.d-flex p {
+  margin: 0;
 }
 
 @media (min-width: 576px) and (max-width: 991.98px) {
