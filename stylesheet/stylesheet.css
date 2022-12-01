@@ -44,22 +44,39 @@ nav .navbar-toggler {
 }
 
 #recipesDiv div.row > div > div.container {
-  height: 100%;
-  border-radius: 1rem;
-  border: 2px solid #D4D4D4;
+  height: 85%;
+  border-radius: 10px;
+  border: 1.5px solid #D4D4D4;
+  justify-content: flex-start;
 }
-#recipesDiv img.recipeImg {
+#recipesDiv h2 {
+  font-family: "Playfair Display";
+}
+#recipesDiv div.recipeImgContainer {
   width: 100%;
-  height: 50% !important;
-  border-radius: 1rem 1rem 0 0;
+  height: 60% !important;
+  border-radius: 9px 9px 0 0;
+  overflow: hidden;
+}
+#recipesDiv div.recipeImgContainer img.recipeImg {
+  width: 100%;
+  height: 100% !important;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: transform 0.5s ease;
 }
-#recipesDiv div.d-flex img.authorImg {
+#recipesDiv div.recipeImgContainer img.recipeImg:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#recipesDiv div.authorDiv img.authorImg {
   border-radius: 50%;
 }
-#recipesDiv div.d-flex p {
+#recipesDiv div.authorDiv p {
   margin: 0;
+}
+#recipesDiv div.recipeDateDiv {
+  margin-top: auto;
 }
 
 @media (min-width: 576px) and (max-width: 991.98px) {
