@@ -43,6 +43,13 @@ nav .navbar-toggler {
   font-size: 4rem;
 }
 
+#recipesDiv img {
+  width: 100%;
+  height: 65%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media (min-width: 576px) and (max-width: 991.98px) {
   nav .navbar-brand {
     position: absolute;
