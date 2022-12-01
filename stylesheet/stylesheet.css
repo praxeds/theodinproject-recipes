@@ -9,11 +9,61 @@ nav .form-control {
   border: none !important;
   background-color: transparent !important;
 }
-nav .form-control:focus, nav .navbar-toggler:focus {
+nav .form-control:focus,
+nav .navbar-toggler:focus {
   outline: none;
   box-shadow: none;
 }
 nav .navbar-toggler {
   padding: 0 !important;
   border: none !important;
+}
+
+#titleDiv h1 {
+  font-family: "Catalish Huntera";
+}
+
+#carousel .carousel-item .headerShadowDiv {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.8));
+  pointer-events: none;
+}
+#carousel .carousel-item img {
+  width: 100%;
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#carousel .carousel-item .carousel-caption {
+  text-align: left !important;
+}
+#carousel .carousel-item .carousel-caption h2 {
+  font-family: "Playfair Display";
+  font-size: 4rem;
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  nav .navbar-brand {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 30%);
+  }
+}
+@media (max-width: 991.98px) {
+  #carousel .carousel-item img {
+    width: 100%;
+    height: 100vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 767.98px) {
+  #carousel .carousel-caption h2 {
+    font-size: 1.8rem !important;
+  }
+  #carousel .carousel-caption p {
+    font-size: 0.8rem !important;
+  }
 }/*# sourceMappingURL=stylesheet.css.map */

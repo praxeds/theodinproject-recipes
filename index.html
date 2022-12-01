@@ -20,9 +20,9 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-light px-lg-5 px-4 py-2">
-        <div class="container-fluid d-sm-flex flex-row justify-content-between px-sm-0">
-            <a class="navbar-brand d-lg-none order-sm-1 flex-sm-grow-1" href="#">Taste Delight</a>
+    <nav class="navbar navbar-expand-lg bg-light px-lg-5 px-4 py-3 position-relative">
+        <div class="container d-sm-flex flex-row justify-content-between px-sm-0 px-lg-5">
+            <a class="navbar-brand d-lg-none order-sm-1" href="#">Taste Delight</a>
             <button class="navbar-toggler order-sm-3" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -37,7 +37,8 @@
                         <a class="nav-link" target="_blank" href="https://github.com/praxeds">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="https://www.theodinproject.com/lessons/foundations-recipes">About</a>
+                        <a class="nav-link" target="_blank"
+                            href="https://www.theodinproject.com/lessons/foundations-recipes">About</a>
                     </li>
                 </ul>
             </div>
@@ -47,6 +48,61 @@
             </form>
         </div>
     </nav>
+
+
+    <div class="container-fluid d-none d-lg-block p-5 my-4" id="titleDiv">
+        <h1 class="text-center m-0">TasteDelight</h1>
+    </div>
+
+
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <a href="javascript:void(0)">
+                <div class="carousel-item active position-relative">
+                    <div class="headerShadowDiv position-absolute"></div>
+                    <img src="./assets/images/pexels-solodsha-8105039.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <p class="m-0">These authentic French croissants are warm, buttery, and extra flaky!</p>
+                        <h2>Homemade French<br>Croissants</h2>
+                    </div>
+                </div>
+            </a>
+            <a href="javascript:void(0)">
+                <div class="carousel-item position-relative">
+                    <div class="headerShadowDiv position-absolute"></div>
+                    <img src="./assets/images/pexels-solodsha-7664108.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <p class="m-0">Look no further because a steaming stack of perfectly soft pancakes!</p>
+                        <h2>Easy Fluffy Pancakes<br>from Scratch</h2>
+                    </div>
+                </div>
+            </a>
+            <a href="javascript:void(0)">
+                <div class="carousel-item position-relative">
+                    <div class="headerShadowDiv position-absolute"></div>
+                    <img src="./assets/images/pexels-solodsha-8605710.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <p class="m-0">Healthy popsicles made with blueberries, banana, and yogurt for a cool sweet treat!</p>
+                        <h2>Blueberry Yogurt<br>Swirl Popsicles</h2>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 </body>
 
 </html>
