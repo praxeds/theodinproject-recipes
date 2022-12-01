@@ -69,12 +69,23 @@ nav {
     div.row>div>div.container {
         height: 85%;
         border-radius: 10px;
-        border: 1.5px solid $gray-300;
+        border: 1.2px solid $gray-300;
         justify-content: flex-start;
+
+        .bi-star::before,
+        .bi-star-fill::before,
+        .bi-star-half::before {
+            color: $red-500;
+        }
     }
 
     h2 {
         font-family: 'Playfair Display';
+    }
+
+    h4,
+    p {
+        font-family: 'Inter', sans-serif;
     }
 
     div.recipeImgContainer {
@@ -89,7 +100,8 @@ nav {
             object-fit: cover;
             transition: transform 0.5s ease;
         }
-        img.recipeImg:hover{
+
+        img.recipeImg:hover {
             cursor: pointer;
             transform: scale(1.1);
         }
@@ -99,13 +111,89 @@ nav {
         img.authorImg {
             border-radius: 50%;
         }
+
         p {
             margin: 0;
+            font-size: 0.8rem;
         }
     }
 
     div.recipeDateDiv {
         margin-top: auto;
+        color: $gray-400;
+
+        p {
+            font-size: 0.7rem;
+        }
+
+        .bi::before {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+#newsletterDiv {
+    background-color: $red-200;
+
+    h2 {
+        font-family: 'Playfair Display';
+        font-size: 4rem;
+    }
+
+    p {
+        width: 40%;
+        margin: 0 auto;
+        font-family: 'Inter', sans-serif;
+    }
+
+    div.input-group {
+
+        input:focus,
+        button:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        input {
+            border-radius: 0;
+            font-size: 0.8rem;
+        }
+
+        button {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            background-color: $orange-500;
+            color: white;
+            border-radius: 0;
+            transition: background 0.3s linear;
+        }
+
+        button:hover {
+            background-color: $orange-600 !important;
+        }
+
+    }
+
+    p.termsAndConditions {
+        font-size: 0.7rem !important;
+
+        a {
+            color: black;
+            text-decoration: underline solid $orange-500;
+        }
+    }
+}
+
+
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    #newsletterDiv {
+        div.input-group {
+            width: 40%;
+            margin: 0 auto;
+        }
     }
 }
 
@@ -115,6 +203,13 @@ nav {
     nav {
         .navbar-brand {
             @include absoluteCenter($top: 0, $translateY: 30%);
+        }
+    }
+
+    #newsletterDiv {
+        div.input-group {
+            width: 70% !important;
+            margin: 0 auto;
         }
     }
 }
@@ -130,19 +225,41 @@ nav {
             }
         }
     }
+
+    #newsletterDiv {
+        p {
+            width: 80% !important;
+        }
+    }
 }
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
     #carousel {
-            .carousel-caption {
-                h2 {
-                    font-size: 1.8rem !important;
-                }
-
-                p {
-                    font-size: 0.8rem !important;
-                }
+        .carousel-caption {
+            h2 {
+                font-size: 1.8rem !important;
             }
+
+            p {
+                font-size: 0.8rem !important;
+            }
+        }
+    }
+
+    #newsletterDiv {
+        h2 {
+            font-size: 2.7rem !important;
+        }
+
+        p {
+            width: 80% !important;
+            font-size: 0.7rem !important;
+        }
+
+        div.input-group {
+            width: 90% !important;
+            margin: 0 auto;
+        }
     }
 }

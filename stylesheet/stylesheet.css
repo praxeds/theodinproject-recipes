@@ -46,11 +46,20 @@ nav .navbar-toggler {
 #recipesDiv div.row > div > div.container {
   height: 85%;
   border-radius: 10px;
-  border: 1.5px solid #D4D4D4;
+  border: 1.2px solid #D4D4D4;
   justify-content: flex-start;
+}
+#recipesDiv div.row > div > div.container .bi-star::before,
+#recipesDiv div.row > div > div.container .bi-star-fill::before,
+#recipesDiv div.row > div > div.container .bi-star-half::before {
+  color: #f64d4d;
 }
 #recipesDiv h2 {
   font-family: "Playfair Display";
+}
+#recipesDiv h4,
+#recipesDiv p {
+  font-family: "Inter", sans-serif;
 }
 #recipesDiv div.recipeImgContainer {
   width: 100%;
@@ -74,17 +83,76 @@ nav .navbar-toggler {
 }
 #recipesDiv div.authorDiv p {
   margin: 0;
+  font-size: 0.8rem;
 }
 #recipesDiv div.recipeDateDiv {
   margin-top: auto;
+  color: #A3A3A3;
+}
+#recipesDiv div.recipeDateDiv p {
+  font-size: 0.7rem;
+}
+#recipesDiv div.recipeDateDiv .bi::before {
+  font-size: 0.8rem;
 }
 
+#newsletterDiv {
+  background-color: #FECACA;
+}
+#newsletterDiv h2 {
+  font-family: "Playfair Display";
+  font-size: 4rem;
+}
+#newsletterDiv p {
+  width: 40%;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+}
+#newsletterDiv div.input-group input:focus,
+#newsletterDiv div.input-group button:focus {
+  outline: none;
+  box-shadow: none;
+}
+#newsletterDiv div.input-group input {
+  border-radius: 0;
+  font-size: 0.8rem;
+}
+#newsletterDiv div.input-group button {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  background-color: #F97316;
+  color: white;
+  border-radius: 0;
+  transition: background 0.3s linear;
+}
+#newsletterDiv div.input-group button:hover {
+  background-color: #EA580C !important;
+}
+#newsletterDiv p.termsAndConditions {
+  font-size: 0.7rem !important;
+}
+#newsletterDiv p.termsAndConditions a {
+  color: black;
+  -webkit-text-decoration: underline solid #F97316;
+          text-decoration: underline solid #F97316;
+}
+
+@media (min-width: 992px) {
+  #newsletterDiv div.input-group {
+    width: 40%;
+    margin: 0 auto;
+  }
+}
 @media (min-width: 576px) and (max-width: 991.98px) {
   nav .navbar-brand {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translate(-50%, 30%);
+  }
+  #newsletterDiv div.input-group {
+    width: 70% !important;
+    margin: 0 auto;
   }
 }
 @media (max-width: 991.98px) {
@@ -94,6 +162,9 @@ nav .navbar-toggler {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  #newsletterDiv p {
+    width: 80% !important;
+  }
 }
 @media (max-width: 767.98px) {
   #carousel .carousel-caption h2 {
@@ -101,5 +172,16 @@ nav .navbar-toggler {
   }
   #carousel .carousel-caption p {
     font-size: 0.8rem !important;
+  }
+  #newsletterDiv h2 {
+    font-size: 2.7rem !important;
+  }
+  #newsletterDiv p {
+    width: 80% !important;
+    font-size: 0.7rem !important;
+  }
+  #newsletterDiv div.input-group {
+    width: 90% !important;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=stylesheet.css.map */
