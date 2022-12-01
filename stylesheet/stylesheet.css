@@ -43,7 +43,7 @@ nav .navbar-toggler {
   font-size: 4rem;
 }
 
-#recipesDiv img {
+#recipesDiv img.recipeImg {
   width: 100%;
   height: 65%;
   -o-object-fit: cover;
