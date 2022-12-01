@@ -1,0 +1,19 @@
+@import url(fonts/CatalishHuntera.css);
+@import url(fonts/Inter.css);
+@import url(fonts/PlayfairDisplay.css);
+nav .navbar-brand {
+  font-family: "Catalish Huntera";
+}
+nav .form-control {
+  padding: 0 !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+nav .form-control:focus, nav .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+nav .navbar-toggler {
+  padding: 0 !important;
+  border: none !important;
+}/*# sourceMappingURL=stylesheet.css.map */
