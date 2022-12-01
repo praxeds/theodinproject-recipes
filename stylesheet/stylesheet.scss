@@ -184,7 +184,23 @@ nav {
     }
 }
 
+footer {
+    h3 {
+        font-family: 'Catalish Huntera';
+    }
 
+    h5, .nav-item {
+        font-family: 'Inter', sans-serif;
+    }
+
+    a, .bi {
+        transition: color 0.5s ease;
+    }
+    a.nav-link:hover,
+    .bi:hover {
+        color: $gray-800 !important;
+    }
+}
 
 
 // Large devices (desktops, 992px and up)

@@ -137,6 +137,20 @@ nav .navbar-toggler {
           text-decoration: underline solid #F97316;
 }
 
+footer h3 {
+  font-family: "Catalish Huntera";
+}
+footer h5, footer .nav-item {
+  font-family: "Inter", sans-serif;
+}
+footer a, footer .bi {
+  transition: color 0.5s ease;
+}
+footer a.nav-link:hover,
+footer .bi:hover {
+  color: #262626 !important;
+}
+
 @media (min-width: 992px) {
   #newsletterDiv div.input-group {
     width: 40%;
